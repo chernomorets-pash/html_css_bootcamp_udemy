@@ -1,0 +1,45 @@
+body,
+html {
+    box-sizing: border-box;
+    background-color: cornsilk;
+    text-align: center;
+
+}
+
+ul.navi {
+    border: 5px solid #ffcc5c;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+
+
+main.flags {
+    background-color: darkgrey;
+    display: flex;
+    height: 100%;
+    padding: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+.child1 {
+    background-color: rgb(208, 151, 237);
+    border: 2px solid rgba(233, 19, 233, 0.886);
+    width: 150px;
+}
+
+.child2 {
+    background-color: rgb(22, 240, 240);
+    border: rgb(249, 228, 3) 2px solid;
+    width: 150px;
+}
+
+.child3 {
+    width: 150px;
+    background-color: rgb(48, 238, 48);
+    border: 2px solid rgb(211, 51, 51);
+
+}

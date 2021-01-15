@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="/form_styles.css">
+</head>
+
+<body>
+    <h1>Forms Playground</h1>
+
+    <form action="/index">
+        <p>
+            <!-- laber FOR must be connectot to unic ID -->
+            <label for="username">Enter the Username</label>
+            <!-- placeholder reserves the input name -->
+            <input id="username" type="text" placeholder="Name" name="name">
+        </p>
+        <p>
+            <label for="password">Enter your password</label>
+            <!-- name - очень важен для обработки сервером -->
+            <input id="password" type="password" placeholder="Enter your password" name="password">
+        </p>
+        <p>
+            <label for="color">Chose your color</label>
+            <input id="color" type="color" name="color">
+        </p>
+        <p>
+            <label for="number">Specify your number</label>
+            <input id="number" type="number" value="10" min="10" max="500" step="10" placeholder="Enter your number"
+                name="number">
+
+        </p>
+        <!-- Если кнопка находится внутри форму - стандартным действием является выполнение 
+        SUBMIT THE FORM (то которое прописано в action of the form) -->
+        <button>Submit</button>
+        <p>
+            <button type="button">Unclickable Button</button>
+        </p>
+        <!-- anothe option of submit button -->
+        <input type="submit" value="Sybmit by input">
+    </form>
+
+    <form action="http://www.reddit.com/search">
+        <input type="text" name="q">
+        <button>Search Reddit</button>
+    </form>
+
+    <h2>Google Search</h2>
+
+    <form action="https://www.google.com/search">
+        <label for="google">Google Search</label>
+        <input id="google" type="text" name="q">
+        <button>поиск!</button>
+    </form>
+
+    <h2>More inputs</h2>
+    <form action="/birds">
+        <input type="checkbox" name="agree" id="agree" checked>
+        <label for="agree">I do agree</label>
+        <button>Submit</button>
+    </form>
+    <h2>Radio buttons</h2>
+    <form action="/goforit">
+        <p>
+            <label for="xs">XS</label>
+            <input type="radio" name="size" id="xs" value="size_xs">
+            <label for="s">S</label>
+            <input type="radio" name="size" id="s" value="size_s">
+            <label for="l">L</label>
+            <input type="radio" name="size" id="l" value="size_l">
+            <!-- При нажатии кнопки Суб - отправляется запрос форм экшн+ value
+            Если валю не указан, запрос идет on или off -->
+            <button>Sub</button>
+        </p>
+    </form>
+    <form action="/meal">
+        <p>
+            <label for="meal">Please select a meal type</label>
+            <select name="meal" id="meal">
+                <option value="fish">Fish</option>
+                <option value="vegatable" selected>Vegatable</option>
+                <option value="stake">Stake</option>
+            </select>
+        </p>
+
+
+        <p>
+            <label for="cheese">Amount of cheese:</label>
+            <input type="range" id="cheese" min="0" max="100" step="5" value="70" name="cheese_level">
+        </p>
+        <p>
+            <label for="req">Any spec request</label>
+            <br>
+            <textarea name="req" id="req" cols="30" rows="10"
+                placeholder="If you have some specific request, type it in this area:"></textarea>
+        </p>
+        <button>Maske a choice</button>
+    </form>
+
+    <h2>Validation Form</h2>
+    <form action="/dummy">
+        <label for="first">Enter Firts Name</label>
+        <input type="text" name="first" id="first" required>
+        <p>
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" maxlength="25" minlength="5" required>
+        </p>
+        <br>
+        <button>Отправить Форму</button>
+    </form>
+</body>
+
+</html>

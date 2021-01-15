@@ -1,0 +1,29 @@
+section {
+    width: 500px;
+    height: 500px;
+    background-color: #0081a7;
+}
+
+/* RGBA цвет, последнее значение от 0-1 отвечает за     
+прозрачность елемента(его фона) но не контента внутри */
+.rgba {
+    width: 50%;
+    height: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Opacity свойство прозрачности которое применятся 
+как для елемента так и для контента внутри */
+.opacity {
+    width: 50%;
+    height: 50%;
+    background-color: #00afb9;
+    opacity: 0.5;
+}
+
+.rgba2 {
+
+    width: 50%;
+    height: 50%;
+    background-color: #37fe0076;
+}

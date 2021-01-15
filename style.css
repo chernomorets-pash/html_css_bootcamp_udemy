@@ -1,0 +1,157 @@
+body {
+    background-color: #f1faee;
+}
+
+
+/* Selectin every second element of .blackWhite class
+Если в скобках будет только 2(число) то применится только для второго елемента */
+
+/* Pseudo Element */
+.blackWhite:nth-of-type(2n) {
+    background-color: #d3decf;
+}
+
+
+.inp:hover {
+    background-color: rgb(0, 187, 255);
+}
+
+.inp:active {
+    background-color: rgb(255, 0, 0);
+}
+
+
+#reg:hover {
+    background-color: slateblue;
+}
+
+
+
+a:hover {
+    background-color: seagreen;
+}
+
+li a {
+    background-color: #457b9d;
+}
+
+input[type="password"] {
+    background-color: tomato;
+}
+
+input[type="text"] {
+    color: rgb(13, 204, 225)
+}
+
+
+#signUp,
+#reg {
+    height: 40px;
+}
+
+button {
+    font-size: 15px;
+    background-color: #1d3557;
+    color: #a8dadc;
+}
+
+
+
+
+label {
+    font-weight: bold;
+}
+
+.red {
+    color: blue;
+    font-weight: 900;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+
+
+
+.f {
+    background-color: blueviolet;
+    text-align: center;
+
+}
+
+/* Parrent container */
+.parent {
+    height: 100vh;
+    border: 20px solid rgb(0, 0, 0);
+    /* align child elements horizontal */
+    display: flex;
+    /* Изменяет направление елементов */
+    /* flex-direction: column; */
+    /* justify-content: space-around;
+    align-items: flex-start; */
+    /* WRAP - складывать, упаковывать, переносит контент ниже когда оконо браузера сжимают */
+    /* flex-wrap: wrap;
+    align-content: flex-start; */
+}
+
+.child1 {
+    width: 200px;
+    height: 200px;
+    background: coral;
+    /* Заберает-ростягивается на все доступное место (пустое) */
+    flex-grow: 1;
+}
+
+.child2 {
+    width: 200px;
+    height: 200px;
+    background: rgb(13, 204, 225);
+    order: 1;
+    flex-basis: 200px;
+}
+
+.child3 {
+    width: 200px;
+    height: 200px;
+    background: red;
+    order: 3;
+}
+
+.child4 {
+    width: 200px;
+    height: 200px;
+    background: rgb(211, 230, 7);
+    order: 2;
+}
+
+h1,
+h2 {
+    color: #457b9d;
+
+}
+
+footer {
+    background-color: lightcoral;
+    font-size: 50px;
+
+}
+
+thead {
+    background: chocolate;
+}
+
+tbody {
+    background: darkcyan;
+}
+
+/* Pseudo classes  */
+
+p::first-letter {
+    font-size: 50px;
+    background-color: red;
+}
+
+/* Селектор - атрибуты выбранного обьекта (выделенного) */
+*::selection {
+    background-color: #bfd200;
+}
